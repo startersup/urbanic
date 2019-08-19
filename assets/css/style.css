@@ -337,6 +337,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     padding:10px;
 }
 
+
+/*cards*/
 .servicecard {
  border:2px solid #f4f4f4;
   transition: 0.3s;
@@ -372,7 +374,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   color: orange;
 }
 
-
+/*cards*/
 
 
 /*carousel*/
@@ -435,8 +437,50 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 /* carousel */
 
-
-
+/*inputs*/
+input[type=text], input[type=email], input[type=password], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    min-height: 45px;
+    margin: 8px 0;
+    color: #000000;
+    border: 1px solid #DBDFE3;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+}
+.controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    background-color: #E2E2E2;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 40px;
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+}
+.selectit {
+    width: 100%;
+    min-height: 45px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid #DBDFE3;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+.textarea {
+    width: 100%;
+    padding: 12px 20px;
+    min-height: 45px;
+    margin: 8px 0;
+    min-height: 100px;
+    color: #000000;
+    border: 1px solid #DBDFE3;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+/*inputs*/
 
 /*footer*/
 .footer
