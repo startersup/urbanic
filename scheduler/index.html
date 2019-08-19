@@ -38,6 +38,11 @@
       <meta content="telephone=no" name="format-detection"/>
       <meta content="address=no" name="format-detection"/>
       <link rel="stylesheet" href="../assets/css/style.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.min.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -50,8 +55,32 @@
     <section class="about">
     <div class="container">
             <h1>One step away for scheduling</h1><br>
+        <div class="row">
+            <div class="col-md-6">
+        <input class="controls" type="text"  placeholder="Your Good Name Please?">
+            
+             
+        <input class="controls" type="text"  placeholder="Your Email Address Please?">
+              
+        <input class="controls" type="text"  placeholder="Your Contact Number Please?">
+    
+            <select class="selectit controls" name="pass">
+                <option value="0">Service your are choosing ?</option>
+                                        <option value="Air Conditioner">Air-Conditioner</option>
+                                        <option value="Refrigerator">Refridgerator</option>
+                                        <option value="Washing Machine">Washing Machine</option>
+                                        <option value="geysers">Geysers</option>
+                                        <option value="PCB Boards">PCB Boards</option>
+                                        <option value="House Wiring">House Wiring</option>
+                                        <option value="Packers & Movers">Packers & Movers</option>
+                         </select>
+                 <input class="controls" id="datetimepicker" type="text"  placeholder="Choose a suitable date?">
+            </div>
         
-        </div>
+            <div class="col-md-6"> <img class="img lesstop hidden-sm hidden-xs"  src="../assets/images/scheduler.png" alt="UrbanIc" title="Appliance Repair services"> </div>
+            </div>
+            </div>
+       
     </section>
          
     <section class="features">
@@ -102,6 +131,14 @@ $(document).ready(function() {
 	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
 });</script>
     
+         <script>
+                                          $(document).ready(function() {
+                                              $.datepicker.setLocale('pt-EN');
+                                             $('#datetimepicker').datepicker();
+                                             step: 15 
+                                          });
+                                    </script>
+
     
     </body>
 </html> 
