@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800|Rubik:400,500,700&display=swap');
-body
- {
-   overflow-x:hidden;
- }
 
 /* width */
 ::-webkit-scrollbar {
@@ -35,14 +31,24 @@ body
   border:none !important;
   background-color:transparent;
 }
- .navbar
-    {
-    	background-color:#ffffff !important;
+.navbar.scrolled {
+  background-color: #ffffff !important;
     	border:none !important;
     	border-radius:0px;
         z-index:1;
     	min-height:60px !important;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 200ms linear;
+}
+
+ .navbar
+    {
+     background-color:transparent !important;
+    	border:none !important;
+    	border-radius:0px;
+        z-index:1;
+    	min-height:60px !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
@@ -79,9 +85,9 @@ body
         line-height: 20px;
          font-family: 'Poppins', sans-serif;
     }
-     .navbar-nav li a:hover
+     .navbar-nav>li>a:hover
     {
-        color:#ffffff;
+        color:#01A1DD !important;
     }
 .navbar-default .navbar-toggle {
     border:none !important;
@@ -189,14 +195,20 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     }
 .services
 {
-  padding:50px 20px 50px 20px;
-      min-height:90vh;  
+  padding:60px 20px 60px 20px;
+      min-height:100vh;  
+    background-color:#01a1dd;
 }
  .features
     {
      padding:30px 20px;
         background-color:#f4f4f4;
     }
+.testimonials
+{
+   padding:100px 20px;
+    min-height:50px;
+}
 .bcontent h1
 {
     margin-top:60px;
@@ -204,7 +216,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     font-size: 42px;
     letter-spacing: 0.4px;
     font-weight: 600;
-    line-height: 80px !important;
+    line-height: 70px !important;
 }
 .features h3
 {
@@ -219,8 +231,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 {
     font-family: 'Poppins', sans-serif;
     font-size: 28px;
+    color:#ffffff;
     letter-spacing: 0.4px;
-    font-weight: 600;
+    font-weight: 800;
     line-height: 40px !important; 
 }
 .services p
@@ -228,7 +241,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     color:#171E30;
      font-family: 'Poppins', sans-serif;
     padding:5px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     line-height: 24px; 
 }
@@ -254,20 +267,104 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
    max-width:500px;
     width:100% !important;
 }
-
+.pad
+{
+    padding:10px;
+}
 
 .servicecard {
- border:1px solid #f4f4f4;
+ border:2px solid #f4f4f4;
   transition: 0.3s;
     padding:15px;
+    background-color:#ffffff;
     cursor: pointer;
   width: 100%;
 }
 .servicecard:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 2px 16px 22px 0 rgba(0,0,0,0.8);
+    transform: matrix3dscale(0.6);
+    transition: 0.5s;
 }
 
+.testicard {
+ border:1px solid #f4f4f4;
+  transition: 0.3s;
+    padding:15px;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+  width: 100%;
+}
+.testicard h3
+{
+  font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.4px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 40px !important;   
+}
+.checked {
+  color: orange;
+}
+/*carousel*/
 
+#quote-carousel 
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left 
+{
+  left: -50px !important;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right 
+{
+  right: -50px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+
+.item blockquote {
+    border-left: none; 
+    margin: 10px 20px;
+}
+.carousel-inner
+{
+   text-align: center;
+     font-family: 'Poppins', sans-serif;
+    font-size:16px;
+    font-weight:400;
+    padding:0px 20px;
+    line-height:40px !important;
+}
+/* carousel */
 
 /*mediacss*/
 @media screen and (max-width: 768px) {
@@ -329,6 +426,36 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     font-weight: 500;
     line-height: 45px !important;
 } 
+    .navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}.carousel-inner
+{
+   text-align: center;
+     font-family: 'Poppins', sans-serif;
+    font-size:14px;
+    font-weight:400;
+    padding:0px 5px;
+    line-height:40px !important;
+}
+    .testicard 
+    {
+        border:none !important;
+  transition: 0.3s;
+    padding:5px;
+    cursor: pointer;
+        box-shadow: none;
+  width: 100%;
+}
+    .item blockquote {
+    border-left: none;
+     margin: 5px !important; 
+}
     .services p {
     color: #171E30;
     font-family: 'Poppins', sans-serif;
@@ -336,5 +463,16 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     font-size: 13px;
     text-align: center;
     line-height: 24px;
+}
+    .checked {
+  color: orange;
+}
+    .med {
+    max-width: 40px;
+    width: 100%;
+}
+    .features h3
+{
+   display: none;
 }
 }
