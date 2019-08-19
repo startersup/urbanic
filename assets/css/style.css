@@ -218,6 +218,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
       min-height:100vh;  
     background-color:#01a1dd;
 }
+.issues
+{
+  padding:60px 20px 60px 20px; 
+    background-color:#01a1dd;
+}
  .features
     {
         background-color:#f4f4f4;
@@ -245,7 +250,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     text-align: center;
     line-height: 40px !important;
 }
-.services h3
+.services h3, .issues h3
 {
     font-family: 'Poppins', sans-serif;
     font-size: 28px;
@@ -254,7 +259,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     font-weight: 800;
     line-height: 40px !important; 
 }
-.services p
+.services p, .issues h4
 {
     color:#171E30;
      font-family: 'Poppins', sans-serif;
@@ -272,6 +277,15 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     text-align: left;
     font-weight:500;
     line-height: 40px; 
+}
+.issues p
+{
+  color:#171E30;
+     font-family: 'Poppins', sans-serif;
+    padding:5px;
+    font-size: 14px;
+    text-align: left;
+    line-height: 24px;   
 }
 .bcontent h1 span
 {
