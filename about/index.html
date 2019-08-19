@@ -46,45 +46,7 @@
     
     <body>
     
-    <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href=""><img class="logo" src="../assets/images/logo.png" alt="UrbanIc" title="UrbanIc"></a>
-    </div>
-           <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://icrepair.in">Home</a>
-                </li>
-                <li><a href="http://icrepair.in/about">About Us</a>
-                </li>
-                <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services</a>
-          <ul class="dropdown-menu">
-            <li><a href="http://icrepair.in/air-conditioner">Air Conditioners</a></li>
-            <li><a href="#"> Refrigerators</a></li>
-              <li><a href="#"> Washing Machine</a></li>
-            <li><a href="#"> Geysers</a></li>
-            <li><a href="#"> CCTV Camera</a></li>
-             <li><a href="#">PCB Boards</a></li>
-          </ul>
-        </li>
-                <li><a href="./sign">Gallery</a>
-                </li>
-                 <li><a href="./sign">Contact</a>
-                </li>
-                <li><a class="righter"><span>Call us : +919087886644</span></a></li>
-            </ul>
-        </div>
-  </div>
-</nav>
-    
-    
-    
+    <div id="nav"></div>
     <section class="about">
     <div class="container">
             <h1>About Us</h1><br>
@@ -121,49 +83,16 @@
     </div>
      </div>
     </section>
-<footer class="footer">
-<div class="container">
-    <div class="row">
-<div class="col-md-6 top">
-     <h3>Popular Tags</h3>   
-    <div class="tag-container">
-  <span class="tag">#AC repair</span>
-  <span class="tag">#chennai Repair</span>
-  <span class="tag">#fridge repair</span>
- <span class="tag">#appliance repair</span>
- <span class="tag">#packers and movers</span>
- <span class="tag">#Heater service</span>
-        <span class="tag">#PCB Boards Reapir</span>
-  <span class="tag">#Repair service</span>
-  <span class="tag">#CCTV camera</span>
- <span class="tag">#appliance repair</span>
- <span class="tag">#Chennai</span>
- <span class="tag">#Geyser service</span>
-<span class="tag">#Wiring service</span>
-  <span class="tag">#CCTV camera Install Service</span>
- <span class="tag">#Electrician</span>
- <span class="tag">#Washing Machine Service</span>
- <span class="tag">#Air conditioner</span>
-</div>
-</div>  
-        <div class="col-md-6 top">
-            <div class="pad backimage">
-     <h3>Contact Us</h3>   
-    <p><i class="fa fa-map-marker"></i> No:12, 7th Floor L-Block Lig Taisha Complex, Verugambakkam, Chennai-092</p>
-            <p><i class="fa fa-phone"></i> 9087886644 , 9514246246</p>
-            <p><i class="fa fa-envelope"></i> urbanic19@gmail.com</p>
-                <center><div class="social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-google"></a>
-                    </div></center>
-</div> </div> 
-        <center><p>Copyrights &copy; 2019 Urbanic. All Rights Reserved.</p></center>
-</div>
-</div>    
+<footer class="footer" id="footer">
+
 </footer>
     
-    
+      <script>
+$(function(){
+  $("#nav").load("../nav.html");
+     $("#footer").load("../foot.html");
+});
+</script> 
     
     <script>// When the DOM is ready, run this function
 $(document).ready(function() {
