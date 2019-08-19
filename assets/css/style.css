@@ -543,7 +543,13 @@ input[type=text], input[type=email], input[type=password], input[type=number] {
   background: #dd4b39;
   color: white;
 }
-
+.whatsapp {
+  position: fixed;
+  top: 90%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 /*footer*/
 
 
