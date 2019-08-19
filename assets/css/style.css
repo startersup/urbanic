@@ -312,6 +312,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 {
     padding:10px;
 }
+.smallimg
+{
+    max-width:40px;
+    width:100%;
+}
 .med
 {
     max-width:60px;
@@ -545,6 +550,7 @@ input[type=text], input[type=email], input[type=password], input[type=number] {
 }
 .whatsapp {
   position: fixed;
+  top: 90%;
   top: 90%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
