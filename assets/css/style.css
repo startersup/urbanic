@@ -547,7 +547,6 @@ input[type=text], input[type=email], input[type=password], input[type=number] {
 .whatsapp {
   position: fixed;
   top: 90%;
-  top: 90%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -666,6 +665,13 @@ input[type=text], input[type=email], input[type=password], input[type=number] {
     .med {
     max-width: 40px;
     width: 100%;
+}
+    .whatsapp {
+    position: fixed;
+    left: 85%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
     .features h3
 {
