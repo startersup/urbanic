@@ -20,7 +20,7 @@ if ($conn->query($sql) === TRUE) {
 
 $values ="Name :". $name."\n\n Email :".$email."\n\n Contact Number :".$number."\n\n Service Opted :".$service."\n\n Date of Repair :".$date."\n\n Customer Address :".$address."\n\n Customer Description : ".$description;
 $values_2 = "";
-      mail('saicharan14996@gmail.com', 'New Request Captured',$values,"New Request from UrbanIC", implode("\r\n", $headers));
+      mail('saicharan14996@gmail.com', 'UrbanIC New Request',$values,"New Job from Customer", implode("\r\n", $headers));
 ?>
 
 
@@ -52,7 +52,7 @@ $values_2 = "";
 
 	<div class="main-content">
 		<i class="fa fa-check main-content__checkmark" id="checkmark"></i>
-		<p class="main-content__body" data-lead-id="main-content-body" style="line-height:30px;">Thanks a bunch for Reaching me ! we will soon reply back to you in a while, in case of emergency reach us at :+91 9087886644</p>
+		<p class="main-content__body" data-lead-id="main-content-body" style="line-height:30px;">Thanks a bunch for Reaching us ! we will soon reply back to you, in case of emergency reach us at :+91 9087886644</p>
 	</div>
 
 	<footer class="site-footer" id="footer">
