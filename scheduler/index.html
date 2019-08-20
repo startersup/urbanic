@@ -52,14 +52,15 @@
             <h1>One step away for scheduling</h1><br>
         <div class="row">
             <div class="col-md-6">
-        <input class="controls" type="text"  placeholder="Your Good Name Please?">
+                <form action="http://icrepair.in/success.php" method="post">
+        <input class="controls" name="name" type="text" required placeholder="Your Good Name Please?">
             
              
-        <input class="controls" type="text"  placeholder="Your Email Address Please?">
+        <input class="controls" name="email" type="text" required placeholder="Your Email Address Please?">
               
-        <input class="controls" type="text"  placeholder="Your Contact Number Please?">
+        <input class="controls" name="number" type="text" required placeholder="Your Contact Number Please?">
     
-            <select class="selectit controls" name="pass">
+            <select class="selectit controls"  required name="service">
                 <option value="0">Service your are choosing ?</option>
                                         <option value="Air Conditioner">Air-Conditioner</option>
                                         <option value="Refrigerator">Refridgerator</option>
@@ -69,10 +70,11 @@
                                         <option value="House Wiring">House Wiring</option>
                                         <option value="Packers & Movers">Packers & Movers</option>
                          </select>
-                 <input class="controls" id="datepicker" type="date" value="Choose a suitable date?">
-                <textarea class="controls textarea" type="text" placeholder="Enter your Address" name="drop" required autocomplete="off"></textarea>
-                <textarea class="controls textarea" type="text" placeholder="Describe problem in detail" name="drop" required="" autocomplete="off"></textarea>
-                <button class="buttonred">Send us now</button>
+                 <input class="controls" name="date" required id="datepicker" type="date" value="Choose a suitable date?">
+                <textarea class="controls textarea" name="address" required type="text" placeholder="Enter your Address" name="drop" required autocomplete="off"></textarea>
+                <textarea class="controls textarea" name="description" required type="text" placeholder="Describe problem in detail" name="drop" required="" autocomplete="off"></textarea>
+                <input class="buttonred" type="submit" value="Send us Now">
+                    </form>
             </div>
         
             <div class="col-md-6"> <img class="img lesstop hidden-sm hidden-xs"  src="../assets/images/scheduler.png" alt="UrbanIc" title="Appliance Repair services"> </div>

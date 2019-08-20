@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost", "u319803083_data", "Saicharan@123", "u319803083_seo");
+$conn = mysqli_connect("localhost", "u180164016_urban", "Urbanic@123", "u180164016_urban");
    
   if($conn === false)
       die("ERROR: Could not connect. " . mysqli_connect_error());
@@ -7,20 +7,20 @@ $conn = mysqli_connect("localhost", "u319803083_data", "Saicharan@123", "u319803
   $name = $_POST['name'];
   $email = $_POST['email'];
    $number = $_POST['number'];
-   $subject = $_POST['subject'];
-   $mess = $_POST['message'];
-  
-    $sql = "INSERT INTO data (name,email,number,subject,message)VALUES 
-              ('$name','$email','$number','$subject','$mess')";
+   $service = $_POST['service'];
+   $date = $_POST['date'];
+   $address = $_POST['address'];
+   $description = $_POST['description'];  
+    $sql = "INSERT INTO data (name,email,number,service,date,address,description)VALUES 
+              ('$name','$email','$number','$service','$date',$address','$description')";
 if ($conn->query($sql) === TRUE) {
-   // echo "New record created successfully";
 } else {
-   // echo "Error: " . $sql . "<br>" . $conn->error;
+   
 }
 
-$values ="Name :". $name."\n\n Email :".$email."\n\n Contact Number :".$number."\n\n Subject :".$subject."\n\n Message : ".$mess;
+$values ="Name :". $name."\n\n Email :".$email."\n\n Contact Number :".$number."\n\n Service Opted :".$service."\n\n Date of Repair :".$date."\n\n Customer Address :".$address."\n\n Customer Description : ".$description;
 $values_2 = "";
-      mail('saicharan14996@gmail.com', 'New Request Captured',$values,"New Request from SEOTechie", implode("\r\n", $headers));
+      mail('saicharan14996@gmail.com', 'New Request Captured',$values,"New Request from UrbanIC", implode("\r\n", $headers));
 ?>
 
 
@@ -52,11 +52,11 @@ $values_2 = "";
 
 	<div class="main-content">
 		<i class="fa fa-check main-content__checkmark" id="checkmark"></i>
-		<p class="main-content__body" data-lead-id="main-content-body" style="line-height:30px;">Thanks a bunch for Reaching me ! i will soon reply back to you with a optimal solution, in case of emergency reach me at :+91 9551936390</p>
+		<p class="main-content__body" data-lead-id="main-content-body" style="line-height:30px;">Thanks a bunch for Reaching me ! we will soon reply back to you in a while, in case of emergency reach us at :+91 9087886644</p>
 	</div>
 
 	<footer class="site-footer" id="footer">
-		<p class="site-footer__fineprint" id="fineprint">Copyright ©2018 | All Rights Reserved</p>
+		<p class="site-footer__fineprint" id="fineprint">Copyright UrbanIC ©2019 | All Rights Reserved</p>
 	</footer>
 </body>
 </html>
