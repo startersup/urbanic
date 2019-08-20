@@ -38,11 +38,6 @@
       <meta content="telephone=no" name="format-detection"/>
       <meta content="address=no" name="format-detection"/>
       <link rel="stylesheet" href="../assets/css/style.css">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.min.css" />
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -74,7 +69,10 @@
                                         <option value="House Wiring">House Wiring</option>
                                         <option value="Packers & Movers">Packers & Movers</option>
                          </select>
-                 <input class="controls" id="datetimepicker" type="text"  placeholder="Choose a suitable date?">
+                 <input class="controls" id="datepicker" type="date" value="Choose a suitable date?">
+                <textarea class="controls textarea" type="text" placeholder="Enter your Address" name="drop" required autocomplete="off"></textarea>
+                <textarea class="controls textarea" type="text" placeholder="Describe problem in detail" name="drop" required="" autocomplete="off"></textarea>
+                <button class="buttonred">Send us now</button>
             </div>
         
             <div class="col-md-6"> <img class="img lesstop hidden-sm hidden-xs"  src="../assets/images/scheduler.png" alt="UrbanIc" title="Appliance Repair services"> </div>
@@ -129,16 +127,6 @@ $(document).ready(function() {
     
     <script>$(window).scroll(function(){
 	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
-});</script>
-    
-         <script>
-                                          $(document).ready(function() {
-                                              $.datepicker.setLocale('pt-EN');
-                                             $('#datetimepicker').datepicker();
-                                             step: 15 
-                                          });
-                                    </script>
-
-    
+});</script>    
     </body>
 </html> 

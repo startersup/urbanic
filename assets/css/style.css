@@ -443,7 +443,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 /* carousel */
 
 /*inputs*/
-input[type=text], input[type=email], input[type=password], input[type=number] {
+input[type=text], input[type=email], input[type=password], input[type=number], input[type=date] {
     width: 100%;
     padding: 12px 20px;
     min-height: 45px;
