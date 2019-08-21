@@ -540,7 +540,9 @@ input[type=text], input[type=email], input[type=password], input[type=number], i
 }
 .fa-phone
 {
+    font-size: 20px !important;
     padding:2px !important;
+    margin: 0 !important;
 }
 .fa-google {
      font-size: 20px !important;
