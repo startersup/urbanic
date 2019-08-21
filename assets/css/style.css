@@ -71,6 +71,11 @@
     padding:10px;
     
 }
+.proimage
+{
+    max-width:75px !important;
+    width:100%;
+}
     .navbar-left
     {
         float:left;
@@ -318,6 +323,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     max-width:60px;
     width:100%;
 }
+
 .img
 {
    max-width:500px;
@@ -348,6 +354,15 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
  border:2px solid #f4f4f4;
   transition: 0.3s;
     padding:15px;
+    background-color:#ffffff;
+    cursor: pointer;
+  width: 100%;
+}
+.servicescard {
+ border:2px solid #f4f4f4;
+  transition: 0.3s;
+    padding:40px 15px;
+    height:200px;
     background-color:#ffffff;
     cursor: pointer;
   width: 100%;
