@@ -173,7 +173,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     margin-top:-10px !important;
     color:#ffffff !important;
     background-color:#01A1DD;
-    padding:10px;
+    padding:5px 20px;
 }
 /*button*/
 .button {
