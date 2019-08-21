@@ -538,7 +538,10 @@ input[type=text], input[type=email], input[type=password], input[type=number], i
   background: #55ACEE;
   color: white;
 }
-
+.fa-phone
+{
+    padding:2px !important;
+}
 .fa-google {
      font-size: 20px !important;
   background: #dd4b39;
