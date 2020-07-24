@@ -20,7 +20,7 @@ if ($conn->query($sql) === TRUE) {
 
 $values ="Name :". $name."\n\n Email :".$email."\n\n Contact Number :".$number."\n\n Service Opted :".$service."\n\n Date of Repair :".$date."\n\n Customer Address :".$address."\n\n Customer Description : ".$description;
 $values_2 = "";
-      mail('urbanic19@gmail.com', 'UrbanIC New Request',$values,"New Job from Customer", implode("\r\n", $headers));
+      mail('saicharan14996@gmail.com', 'UrbanIC New Request',$values,"New Job from Customer", implode("\r\n", $headers));
 ?>
 
 
