@@ -19,51 +19,50 @@ $conn = new mysqli($servername, $username, $password);
    $to = "$email";
    $subject = "Urbanic | New Request from the Customer";
    $message = "
-<html>
-<head>
-<title>UrbanIc</title>
-</head>
-<body>
-<p>This email contains HTML Tags!</p>
-<table>
-<tr>
-<td>Customer Name</td>
-<td>$name</td>
-</tr>
-<tr>
-<td>Customer Email Address</td>
-<td>$email</td>
-</tr>
-<tr>
-<td>Contact Number</td>
-<td>$number</td>
-</tr>
-<tr>
-<td>Service Required</td>
-<td>$service</td>
-</tr>
-<tr>
-<td>Scheduled Date</td>
-<td>$date</td>
-</tr>
-<tr>
-<td>Customer Address</td>
-<td>$address</td>
-</tr>
-<tr>
-<td>Issue Description</td>
-<td>$description</td>
-</tr>
-</table>
-</body>
-</html>";
+   <html>
+   <head>
+   <title>UrbanIc</title>
+   </head>
+   <body style='background-color:#f4f4f4'>
+   <table style='border:1px solid #f4f4f4;background-color:#ffffff;max-width:600px;width:100%;margin:0 auto; border-collapse: collapse;'>
+   <tr>
+   <td style='width:50%;padding:10px;border:1px solid #cccccc'>Customer Name</td>
+   <td style='width:50%;padding:10px;border:1px solid #cccccc'>$name</td>
+   </tr>
+   <tr>
+   <td style='width:50%;padding:10px;border:1px solid #cccccc'>Customer Email Address</td>
+   <td style='width:50%;padding:10px;border:1px solid #cccccc'>$email</td>
+   </tr>
+   <tr>
+   <td style='width:50%;padding:10px;border:1px solid #cccccc'>Contact Number</td>
+   <td style='width:50%;padding:10px;border:1px solid #cccccc'>$number</td>
+   </tr>
+   <tr>
+   <td style='width:50%;padding:10px;border:1px solid #cccccc'>Service Required</td>
+   <td style='width:50%;padding:10px;border:1px solid #cccccc'>$service</td>
+   </tr>
+   <tr>
+   <td style='width:50%;padding:10px;border:1px solid #cccccc'>Scheduled Date</td>
+   <td style='width:50%;padding:10px;border:1px solid #cccccc'>$date</td>
+   </tr>
+   <tr>
+   <td style='width:50%;padding:10px;border:1px solid #cccccc'>Customer Address</td>
+   <td style='width:50%;padding:10px;border:1px solid #cccccc'>$address</td>
+   </tr>
+   <tr>
+   <td style='width:50%;padding:10px;border:1px solid #cccccc'>Issue Description</td>
+   <td style='width:50%;padding:10px;border:1px solid #cccccc'>$description</td>
+   </tr>
+   </table>
+   </body>
+   </html>";
 
 $headers .= "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\b";
 
 // More headers
 $headers .= 'From: <bookings@icrepair.in>' . "\r\n";
-$headers .= 'Cc: saicharan14996@gmail.com' . "\r\n";
+$headers .= 'Cc: urbanic19@gmail.com' . "\r\n";
 
 mail($to,$subject,$message,$headers);
 ?>
