@@ -61,7 +61,7 @@ $headers .= "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\b";
 
 // More headers
-$headers .= 'From: <bookings@icrepair.in>' . "\r\n";
+$headers .= 'From:bookings@icrepair.in' . "\r\n";
 $headers .= 'Cc: urbanic19@gmail.com' . "\r\n";
 $headers .= 'Bcc: saicharan14996@gmail.com' . "\r\n";
 
