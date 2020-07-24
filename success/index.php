@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost", "u180164016_urban", "Urbanic@123", "u180164016_urban");
+$conn = mysqli_connect("localhost", "u180164016_urban", "Urbanic@123", "urbanic_table");
    
   if($conn === false)
       die("ERROR: Could not connect. " . mysqli_connect_error());
