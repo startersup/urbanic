@@ -11,8 +11,7 @@ $conn = mysqli_connect("localhost", "u180164016_urban", "Urbanic@123", "u1801640
    $date = $_POST['date'];
    $address = $_POST['address'];
    $description = $_POST['description'];  
-
-
+   $sql = "INSERT INTO 'urbanic_table'('name', 'email', 'number', 'service', 'date', 'address', 'description') VALUES ($name,  $email ,$number,$service,$date ,$address,$description)')";
    $to = "$email";
    $subject = "Urbanic | New Request from the Customer";
    $message = "
