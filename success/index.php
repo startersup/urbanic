@@ -1,5 +1,9 @@
 <?php
-$conn = mysqli_connect("localhost", "u180164016_urban", "Urbanic@123", "urbanic_table");
+$servername = "localhost";
+$username = "u180164016_urban";
+$password = "Urbanic@123";
+$conn = new mysqli($servername, $username, $password);
+
    
   if($conn === false)
       die("ERROR: Could not connect. " . mysqli_connect_error());
