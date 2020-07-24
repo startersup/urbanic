@@ -11,16 +11,58 @@ $conn = mysqli_connect("localhost", "u180164016_urban", "Urbanic@123", "u1801640
    $date = $_POST['date'];
    $address = $_POST['address'];
    $description = $_POST['description'];  
-    $sql = "INSERT INTO data (name,email,number,service,date,address,description)VALUES 
-              ('$name','$email','$number','$service','$date',$address','$description')";
-if ($conn->query($sql) === TRUE) {
-} else {
-   
-}
 
-$values ="Name :". $name."\n\n Email :".$email."\n\n Contact Number :".$number."\n\n Service Opted :".$service."\n\n Date of Repair :".$date."\n\n Customer Address :".$address."\n\n Customer Description : ".$description;
-$values_2 = "";
-      mail('saicharan14996@gmail.com', 'UrbanIC New Request',$values,"New Job from Customer", implode("\r\n", $headers));
+
+   $to = "$email";
+   $subject = "Urbanic | New Request from the Customer";
+   $message = "
+<html>
+<head>
+<title>UrbanIc</title>
+</head>
+<body>
+<p>This email contains HTML Tags!</p>
+<table>
+<tr>
+<td>Customer Name</td>
+<td>$name</td>
+</tr>
+<tr>
+<td>Customer Email Address</td>
+<td>$email</td>
+</tr>
+<tr>
+<td>Contact Number</td>
+<td>$number</td>
+</tr>
+<tr>
+<td>Service Required</td>
+<td>$service</td>
+</tr>
+<tr>
+<td>Scheduled Date</td>
+<td>$date</td>
+</tr>
+<tr>
+<td>Customer Address</td>
+<td>$address</td>
+</tr>
+<tr>
+<td>Issue Description</td>
+<td>$description</td>
+</tr>
+</table>
+</body>
+</html>";
+
+$headers .= "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\b";
+
+// More headers
+$headers .= 'From: <bookings@icrepair.in>' . "\r\n";
+$headers .= 'Cc: saicharan14996@gmail.com' . "\r\n";
+
+mail($to,$subject,$message,$headers);
 ?>
 
 
@@ -56,7 +98,7 @@ $values_2 = "";
 	</div>
 
 	<footer class="site-footer" id="footer">
-		<p class="site-footer__fineprint" id="fineprint">Copyright UrbanIC ©2019 | All Rights Reserved</p>
+		<p class="site-footer__fineprint" id="fineprint">Copyright UrbanIC ©2020 | All Rights Reserved</p>
 	</footer>
 </body>
 </html>
